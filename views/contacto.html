@@ -3,9 +3,77 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Tematica | Generos Musicales</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet" />
 </head>
 <body>
+    <header class="header container">
+        <section class="content-header">
+            <section class="text-header">
+                <div class="etiqueta">
+                    <p class="text-etiqueta">Nos encataria saber de ti</p>
+                </div>
+                <h1>Contactanos ahora</h1>
+                <p>Contactanos para tener un acercamiento mas profundo de tu genero musical favorito luego de hbaer leido este articulo por medio del siguiente formulario.</p>
+            </section>
+            <section class="buttons-header">
+                <a class="primary" href="#form">Comenzar Formulario</a>
+            </section>
+        </section>
+    </header>
 
+    <nav class="nav">
+        <ul class="ul-nav">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../views/tematica.html">Tematica</a></li>
+            <li><a href="../views/acerca.html">Acerca</a></li>
+            <li><a href="../views/contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section class="title-sections">
+            <h2>Formulario de contacto</h2>
+        </section>
+
+        <form id="form">
+            <div class="input-container">
+                <label>Nombre completo</label>
+                <input class="input" t id="txt_NombreCompleto" type="text" required placeholder="Ingresa tu nombre completo" />
+            </div>
+            <div class="input-container">
+                <label>Correo electronico</label>
+                <input class="input" t id="txt_CorreoElectronico" type="email" required placeholder="Ingresa tu @correoElectronico " />
+            </div>
+            <div class="input-container">
+                <label>Genero musical que te gusta</label>
+                <select class="input" id="generos">
+                    <option value="rock">Seleccionar</option>
+                    <option value="rock">Rock</option>
+                    <option value="pop">Pop</option>
+                    <option value="jazz">Jazz</option>
+                    <option value="hiphop">Hip-Hop</option>
+                    <option value="reggae">Reggae</option>
+                    <option value="blues">Blues</option>
+                    <option value="electronic">Electronic</option>
+                    <option value="classical">Classical</option>
+                    <option value="reggaeton">Reggaetón</option>
+                    <option value="metal">Metal</option>
+                </select>
+            </div>
+
+            <label for="archivo">Envianos tu cancion favorita del genero (opcional):</label>
+            <input class="input" type="file" id="archivo" name="archivo">
+
+            <div class="input-container">
+                <label>Cuentanos el porque te gusta ese genero</label>
+                <textarea id="txt_Mensaje" placeholder="Escribe el porque te gusta el genero que escogiste" class="input"></textarea>
+            </div>
+        </form>
+    </main>
 </body>
 </html>
