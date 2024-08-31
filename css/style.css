@@ -221,9 +221,6 @@ th {
     margin-top:150px;
 }
 
-audio{
-    width:100%;
-}
 
 /*acordeon*/
 
@@ -274,21 +271,18 @@ summary {
         display: block;
     }
 
-        /* Ocultar los encabezados de la tabla en pantallas pequeñas */
-        thead tr {
-            position: absolute;
-            top: -9999px;
-            left: -9999px;
-        }
-
-    /* Estilo para cada fila en la tabla */
-    tr {
-        margin-bottom: 15px;
+    thead tr {
+            display: none;
     }
+
+    audio {
+        width: 70%;
+    }
+
 
     /* Estilo para las celdas de datos */
     td {
-        border: none;
+        border: solid 1px var(--blue-light);
         position: relative;
         padding-left: 50%;
         text-align: right;
@@ -299,7 +293,7 @@ summary {
             content: attr(data-label);
             position: absolute;
             left: 0;
-            width: 45%;
+            width: 60%;
             padding-left: 10px;
             font-weight: bold;
             text-align: left;
