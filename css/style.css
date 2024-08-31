@@ -276,9 +276,10 @@ summary {
     }
 
     audio {
-        width: 70%;
+        width: 100%;
     }
 
+    
 
     /* Estilo para las celdas de datos */
     td {
@@ -302,4 +303,8 @@ summary {
         .header-table{
             margin-bottom:50px;
         }
+
+    .cancion {
+        padding-left: 0%;
+    }
 }
