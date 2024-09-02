@@ -28,10 +28,10 @@
 
     <nav class="nav">
         <ul class="ul-nav">
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="../views/tematica.html">Tematica</a></li>
-            <li><a href="../views/acerca.html">Acerca</a></li>
-            <li><a href="../views/contacto.html">Contacto</a></li>
+            <li><a href="../index.html"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-home"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12.707 2.293l9 9c.63 .63 .184 1.707 -.707 1.707h-1v6a3 3 0 0 1 -3 3h-1v-7a3 3 0 0 0 -2.824 -2.995l-.176 -.005h-2a3 3 0 0 0 -3 3v7h-1a3 3 0 0 1 -3 -3v-6h-1c-.89 0 -1.337 -1.077 -.707 -1.707l9 -9a1 1 0 0 1 1.414 0m.293 11.707a1 1 0 0 1 1 1v7h-4v-7a1 1 0 0 1 .883 -.993l.117 -.007z" /></svg> Inicio</a>
+            <li><a href="../views/tematica.html"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-headphones"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M21 18a3 3 0 0 1 -2.824 2.995l-.176 .005h-1a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-3a3 3 0 0 1 2.824 -2.995l.176 -.005h1c.351 0 .688 .06 1 .171v-.171a7 7 0 0 0 -13.996 -.24l-.004 .24v.17c.25 -.088 .516 -.144 .791 -.163l.209 -.007h1a3 3 0 0 1 2.995 2.824l.005 .176v3a3 3 0 0 1 -2.824 2.995l-.176 .005h-1a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-6a9 9 0 0 1 17.996 -.265l.004 .265v6z" /></svg> Tematica</a></li>
+            <li><a href="../views/acerca.html"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-book"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12.088 4.82a10 10 0 0 1 9.412 .314a1 1 0 0 1 .493 .748l.007 .118v13a1 1 0 0 1 -1.5 .866a8 8 0 0 0 -8 0a1 1 0 0 1 -1 0a8 8 0 0 0 -7.733 -.148l-.327 .18l-.103 .044l-.049 .016l-.11 .026l-.061 .01l-.117 .006h-.042l-.11 -.012l-.077 -.014l-.108 -.032l-.126 -.056l-.095 -.056l-.089 -.067l-.06 -.056l-.073 -.082l-.064 -.089l-.022 -.036l-.032 -.06l-.044 -.103l-.016 -.049l-.026 -.11l-.01 -.061l-.004 -.049l-.002 -.068v-13a1 1 0 0 1 .5 -.866a10 10 0 0 1 9.412 -.314l.088 .044l.088 -.044z" /></svg> Acerca</a> </li>
+            <li><a class="icon-active" href="../views/contacto.html"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class=" icon-active icon icon-tabler icons-tabler-filled icon-tabler-mail-opened"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M14.872 14.287l6.522 6.52a2.996 2.996 0 0 1 -2.218 1.188l-.176 .005h-14a2.995 2.995 0 0 1 -2.394 -1.191l6.521 -6.522l2.318 1.545l.116 .066a1 1 0 0 0 .878 0l.116 -.066l2.317 -1.545z" /><path d="M2 9.535l5.429 3.62l-5.429 5.43z" /><path d="M22 9.535v9.05l-5.43 -5.43z" /><path d="M12.44 2.102l.115 .066l8.444 5.629l-8.999 6l-9 -6l8.445 -5.63a1 1 0 0 1 .994 -.065z" /></svg> Contacto</a></li>
         </ul>
     </nav>
 
@@ -66,13 +66,20 @@
                 </select>
             </div>
 
-            <label for="archivo">Envianos tu cancion favorita del genero (opcional):</label>
-            <input class="input" type="file" id="archivo" name="archivo">
-
             <div class="input-container">
-                <label>Cuentanos el porque te gusta ese genero</label>
-                <textarea id="txt_Mensaje" placeholder="Escribe el porque te gusta el genero que escogiste" class="input"></textarea>
+                <label for="archivo">Envianos tu cancion favorita del genero (opcional):</label>
+                <input class="input" type="file" id="archivo" name="archivo">
             </div>
+
+                <div class="input-container">
+                    <label>Cuentanos el porque te gusta ese genero</label>
+                    <textarea id="txt_Mensaje" placeholder="Escribe el porque te gusta el genero que escogiste" class="input"></textarea>
+                </div>
+
+                <br />
+                <br />
+
+                <button class="primary" type="submit">Enviar</button>
         </form>
     </main>
 </body>
